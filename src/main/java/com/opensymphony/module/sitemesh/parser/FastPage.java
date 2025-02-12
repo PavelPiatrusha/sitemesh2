@@ -46,6 +46,11 @@ public final class FastPage extends AbstractHTMLPage
       out.write(head);
    }
 
+   @Override
+   public void writeMainContent(Writer out) {
+
+   }
+
    public void writeBody(Writer out) throws IOException
    {
       out.write(body);

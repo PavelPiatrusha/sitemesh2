@@ -9,6 +9,8 @@ import java.io.Writer;
  */
 public interface Content {
 
+    void writeMainContent(Writer out) throws IOException;
+
     /**
      * Write out the original unprocessed content.
      */

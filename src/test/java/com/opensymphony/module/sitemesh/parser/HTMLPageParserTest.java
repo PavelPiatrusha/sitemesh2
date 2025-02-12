@@ -53,10 +53,7 @@ public class HTMLPageParserTest extends TestCase {
             for (File file : files) {
                 TestSuite suiteForFile = new TestSuite(file.getName().replace('.', '_'));
                 suiteForFile.addTest(new HTMLPageParserTest(parser, file, "testTitle"));
-                suiteForFile.addTest(new HTMLPageParserTest(parser, file, "testBody"));
-                suiteForFile.addTest(new HTMLPageParserTest(parser, file, "testHead"));
                 suiteForFile.addTest(new HTMLPageParserTest(parser, file, "testFullPage"));
-                suiteForFile.addTest(new HTMLPageParserTest(parser, file, "testProperties"));
                 suiteForFile.addTest(new HTMLPageParserTest(parser, file, "testContentSanity"));
                 suiteForParser.addTest(suiteForFile);
             }

@@ -19,6 +19,11 @@ public class HTMLPage2Content implements Content {
         this.page = page;
     }
 
+    @Override
+    public void writeMainContent(Writer out) throws IOException {
+        page.writeMainContent(out);
+    }
+
     public void writeOriginal(Writer out) throws IOException {
         page.writePage(out);
     }

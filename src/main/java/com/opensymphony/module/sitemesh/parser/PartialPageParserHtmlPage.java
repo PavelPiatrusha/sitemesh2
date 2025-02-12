@@ -18,6 +18,11 @@ public class PartialPageParserHtmlPage extends AbstractPage implements HTMLPage
     private final SitemeshBufferFragment body;
     private final SitemeshBuffer sitemeshBuffer;
 
+    @Override
+    public void writeMainContent(Writer out) {
+
+    }
+
     public PartialPageParserHtmlPage(SitemeshBuffer sitemeshBuffer)
     {
         this(sitemeshBuffer, null, null, null, null, null, null);

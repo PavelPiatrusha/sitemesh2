@@ -30,6 +30,11 @@ public class Content2HTMLPage implements HTMLPage {
         content.writeOriginal(out);
     }
 
+    @Override
+    public void writeMainContent(Writer out) throws IOException {
+        content.writeMainContent(out);
+    }
+
     public String getPage() {
         try {
             StringWriter writer = new StringWriter();

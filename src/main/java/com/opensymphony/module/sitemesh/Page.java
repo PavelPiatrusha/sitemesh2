@@ -41,6 +41,8 @@ public interface Page {
      */
     void writePage(Writer out) throws IOException;
 
+    void writeMainContent(Writer out) throws IOException;
+
     /**
      * Convenience method to return the contents of the <code>Page</code> in its original format.
      *
